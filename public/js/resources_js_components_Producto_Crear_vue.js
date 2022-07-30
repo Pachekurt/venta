@@ -26,10 +26,10 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       producto: {
         nombre: "",
         detalle: "",
-        categoria: "",
-        medida: "",
-        tipouso: "",
-        marca: "",
+        categoria_id: "",
+        medida_id: "",
+        tipouso_id: "",
+        marca_id: "",
         vencimiento: "",
         codigo: "",
         barras: "",
@@ -134,7 +134,7 @@ var render = function render() {
   })])]), _vm._v(" "), _c("div", {
     staticClass: "col-12 mb-2"
   }, [_c("div", {
-    staticClass: "form-control"
+    staticClass: "form-floating"
   }, [_c("textarea", {
     directives: [{
       name: "model",
@@ -176,8 +176,8 @@ var render = function render() {
     directives: [{
       name: "model",
       rawName: "v-model",
-      value: _vm.producto.categoria,
-      expression: "producto.categoria"
+      value: _vm.producto.categoria_id,
+      expression: "producto.categoria_id"
     }],
     staticClass: "custom-select mr-sm-2",
     attrs: {
@@ -192,7 +192,7 @@ var render = function render() {
           return val;
         });
 
-        _vm.$set(_vm.producto, "categoria", $event.target.multiple ? $$selectedVal : $$selectedVal[0]);
+        _vm.$set(_vm.producto, "categoria_id", $event.target.multiple ? $$selectedVal : $$selectedVal[0]);
       }
     }
   }, [_c("option", {
@@ -210,18 +210,18 @@ var render = function render() {
   }, [_c("label", {
     staticClass: "mr-sm-2",
     attrs: {
-      "for": "inlineFormCustomSelect"
+      "for": "inlineFormCustomSelect2"
     }
   }, [_vm._v("Medida")]), _vm._v(" "), _c("select", {
     directives: [{
       name: "model",
       rawName: "v-model",
-      value: _vm.producto.medida,
-      expression: "producto.medida"
+      value: _vm.producto.medida_id,
+      expression: "producto.medida_id"
     }],
     staticClass: "custom-select mr-sm-2",
     attrs: {
-      id: "inlineFormCustomSelect"
+      id: "inlineFormCustomSelect2"
     },
     on: {
       change: function change($event) {
@@ -232,7 +232,7 @@ var render = function render() {
           return val;
         });
 
-        _vm.$set(_vm.producto, "medida", $event.target.multiple ? $$selectedVal : $$selectedVal[0]);
+        _vm.$set(_vm.producto, "medida_id", $event.target.multiple ? $$selectedVal : $$selectedVal[0]);
       }
     }
   }, [_c("option", {
@@ -250,18 +250,18 @@ var render = function render() {
   }, [_c("label", {
     staticClass: "mr-sm-2",
     attrs: {
-      "for": "inlineFormCustomSelect"
+      "for": "inlineFormCustomSelect3"
     }
   }, [_vm._v("Tipo Uso")]), _vm._v(" "), _c("select", {
     directives: [{
       name: "model",
       rawName: "v-model",
-      value: _vm.producto.tipouso,
-      expression: "producto.tipouso"
+      value: _vm.producto.tipouso_id,
+      expression: "producto.tipouso_id"
     }],
     staticClass: "custom-select mr-sm-2",
     attrs: {
-      id: "inlineFormCustomSelect"
+      id: "inlineFormCustomSelect3"
     },
     on: {
       change: function change($event) {
@@ -272,7 +272,7 @@ var render = function render() {
           return val;
         });
 
-        _vm.$set(_vm.producto, "tipouso", $event.target.multiple ? $$selectedVal : $$selectedVal[0]);
+        _vm.$set(_vm.producto, "tipouso_id", $event.target.multiple ? $$selectedVal : $$selectedVal[0]);
       }
     }
   }, [_c("option", {
@@ -290,18 +290,18 @@ var render = function render() {
   }, [_c("label", {
     staticClass: "mr-sm-2",
     attrs: {
-      "for": "inlineFormCustomSelect"
+      "for": "inlineFormCustomSelect4"
     }
   }, [_vm._v("Marca")]), _vm._v(" "), _c("select", {
     directives: [{
       name: "model",
       rawName: "v-model",
-      value: _vm.producto.marca,
-      expression: "producto.marca"
+      value: _vm.producto.marca_id,
+      expression: "producto.marca_id"
     }],
     staticClass: "custom-select mr-sm-2",
     attrs: {
-      id: "inlineFormCustomSelect"
+      id: "inlineFormCustomSelect4"
     },
     on: {
       change: function change($event) {
@@ -312,7 +312,7 @@ var render = function render() {
           return val;
         });
 
-        _vm.$set(_vm.producto, "marca", $event.target.multiple ? $$selectedVal : $$selectedVal[0]);
+        _vm.$set(_vm.producto, "marca_id", $event.target.multiple ? $$selectedVal : $$selectedVal[0]);
       }
     }
   }, [_c("option", {
@@ -365,7 +365,7 @@ var render = function render() {
     }
   }, [_vm._v("Si")]), _vm._v(" "), _c("option", {
     attrs: {
-      value: "1"
+      value: "2"
     }
   }, [_vm._v("No")])])])]), _vm._v(" "), _c("div", {
     staticClass: "col-12 mb-2"
@@ -509,7 +509,7 @@ var render = function render() {
     }
   }, [_vm._v("Activo")]), _vm._v(" "), _c("option", {
     attrs: {
-      value: "1"
+      value: "2"
     }
   }, [_vm._v("Inactivo")])])])]), _vm._v(" "), _vm._m(0)])])])])])])]);
 };

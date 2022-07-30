@@ -18,4 +18,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
     
 });
-Route:: resource('producto',App\Http\Controllers\productoController::class)->only(['index','store','update','show','destroy']);
+Route:: resource('producto',App\Http\Controllers\ProductoController::class)->only(['index','store','update','show','destroy']);

@@ -16,7 +16,7 @@
                                     </div>
                                 </div>
                                 <div class="col-12 mb-2">
-                                    <div class="form-control">
+                                    <div class="form-floating">
                                         <textarea id="floatingTextarea2" class="form-control" v-model="producto.detalle" style="heigth: 100px"></textarea>
                                         <label  for="floatingTextarea2">Detalle</label>
                                     </div>
@@ -24,7 +24,7 @@
                                 <div class="col-12 mb-2">
                                     <div class="form-control">
                                         <label class="mr-sm-2" for="inlineFormCustomSelect">Categoria</label>
-                                        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" v-model="producto.categoria">
+                                        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" v-model="producto.categoria_id">
                                         <option selected>Seleccione...</option>
                                         <option value="1">Lacteos</option>
                                         </select>
@@ -32,8 +32,8 @@
                                 </div>
                                 <div class="col-12 mb-2">
                                     <div class="form-control">
-                                        <label class="mr-sm-2" for="inlineFormCustomSelect">Medida</label>
-                                        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" v-model="producto.medida">
+                                        <label class="mr-sm-2" for="inlineFormCustomSelect2">Medida</label>
+                                        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect2" v-model="producto.medida_id">
                                         <option selected>Seleccione...</option>
                                         <option value="1">Litros</option>
                                         </select>
@@ -41,8 +41,8 @@
                                 </div>
                                 <div class="col-12 mb-2">
                                     <div class="form-control">
-                                        <label class="mr-sm-2" for="inlineFormCustomSelect">Tipo Uso</label>
-                                        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" v-model="producto.tipouso">
+                                        <label class="mr-sm-2" for="inlineFormCustomSelect3">Tipo Uso</label>
+                                        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect3" v-model="producto.tipouso_id">
                                         <option selected>Seleccione...</option>
                                         <option value="1">Oral</option>
                                         </select>
@@ -50,8 +50,8 @@
                                 </div>
                                 <div class="col-12 mb-2">
                                     <div class="form-control">
-                                        <label class="mr-sm-2" for="inlineFormCustomSelect">Marca</label>
-                                        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" v-model="producto.marca">
+                                        <label class="mr-sm-2" for="inlineFormCustomSelect4">Marca</label>
+                                        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect4" v-model="producto.marca_id">
                                         <option selected>Seleccione...</option>
                                         <option value="1">Patito</option>
                                         </select>
@@ -63,7 +63,7 @@
                                         <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" v-model="producto.vencimiento">
                                         <option selected>Seleccione...</option>
                                         <option value="1">Si</option>
-                                        <option value="1">No</option>
+                                        <option value="2">No</option>
                                         </select>
                                         </div>
                                 </div>
@@ -97,7 +97,7 @@
                                         <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" v-model="producto.status">
                                         <option selected>Seleccione...</option>
                                         <option value="1">Activo</option>
-                                        <option value="1">Inactivo</option>
+                                        <option value="2">Inactivo</option>
                                         </select>
                                         </div>
                                 </div>
@@ -122,10 +122,10 @@ export default{
             producto:{
                 nombre:"",
                 detalle:"",
-                categoria:"",
-                medida:"",
-                tipouso:"",
-                marca:"",
+                categoria_id:"",
+                medida_id:"",
+                tipouso_id:"",
+                marca_id:"",
                 vencimiento:"",
                 codigo:"",
                 barras:"",
